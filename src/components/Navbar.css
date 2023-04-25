@@ -23,6 +23,10 @@
   list-style: none;
 }
 
+.nav-links a {
+  text-decoration: none;
+}
+
 .logo {
   width: 4rem;
 }

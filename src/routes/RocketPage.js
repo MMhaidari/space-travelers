@@ -1,9 +1,8 @@
 import React from 'react';
+import RenderRockets from '../components/RenderRockets';
 
 const RocketPage = () => (
-  <div>
-    Rocket
-  </div>
+  <RenderRockets />
 );
 
 export default RocketPage;

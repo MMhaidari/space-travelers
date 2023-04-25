@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import Navbar from './components/Navbar';
-import MissionPage from './pages/MissionPage';
-import RocketPage from './pages/RocketPage';
-import MyProfilePage from './pages/MyProfilePage';
-import NotMatch from './pages/NotMatch';
+import MissionPage from './routes/MissionPage';
+import RocketPage from './routes/RocketPage';
+import MyProfilePage from './routes/MyProfilePage';
+import NotMatch from './routes/NotMatch';
 
 function App() {
   return (
