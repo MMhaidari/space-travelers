@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import Navbar from './components/Navbar';
-import MissionPage from './pages/MissionPage';
+import MissionsPage from './pages/MissionsPage';
 import RocketPage from './pages/RocketPage';
 import MyProfilePage from './pages/MyProfilePage';
 import NotMatch from './pages/NotMatch';
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<RocketPage />} />
-        <Route path="/missionpage" element={<MissionPage />} />
+        <Route path="/missionpage" element={<MissionsPage />} />
         <Route path="/profilepage" element={<MyProfilePage />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>
