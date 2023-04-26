@@ -15,6 +15,14 @@ const RenderRockets = () => {
     }
   }, [status, dispatch]);
 
+  const handleReserveClick = (rocketId) => {
+    dispatch(reserveRocket(rocketId));
+  };
+
+  const onCancelClick = (rocketId) => {
+    dispatch(cancelReservation(rocketId));
+  };
+
   if (status === 'loading') {
     return <div>Loading...</div>;
   } if (status === 'failed') {
