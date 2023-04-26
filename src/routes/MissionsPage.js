@@ -16,10 +16,13 @@ const MissionsPage = () => {
         <tr>
           <th>Mission</th>
           <th>Description</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>
-        {missions.map((mission) => <Mission key={mission.missionId} mission={mission} />)}
+        {missions.map((mission) => (
+          <Mission key={mission.missionId} mission={mission} />
+        ))}
       </tbody>
     </table>
   );
