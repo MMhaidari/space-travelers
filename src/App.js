@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import Navbar from './components/Navbar';
-import MissionPage from './routes/MissionPage';
-import RocketPage from './routes/RocketPage';
 import MyProfilePage from './routes/MyProfilePage';
 import NotMatch from './routes/NotMatch';
+import MissionsPage from './routes/MissionsPage';
+import RocketPage from './routes/RocketPage';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<RocketPage />} />
-        <Route path="/missionpage" element={<MissionPage />} />
+        <Route path="/missionpage" element={<MissionsPage />} />
         <Route path="/profilepage" element={<MyProfilePage />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>
