@@ -19,8 +19,18 @@
   gap: 1.4rem;
 }
 
-.nav-links li {
+.nav-li {
   list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  color: blue;
 }
 
 .logo {
