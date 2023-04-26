@@ -35,6 +35,8 @@ const RenderRockets = () => {
         <Rocket
           key={rocket.id}
           rocket={rocket}
+          handleReserveClick={handleReserveClick}
+          onCancelClick={onCancelClick}
         />
       ))}
     </div>
