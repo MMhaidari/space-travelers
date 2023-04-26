@@ -1,0 +1,23 @@
+table,
+th,
+td {
+  border: 2px solid #d3d3d3;
+  border-collapse: collapse;
+}
+
+table {
+  margin: 1rem;
+}
+
+th {
+  padding: 1rem;
+  text-align: start;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ebebeb;
+}
+
+tbody th:nth-child(2) {
+  font-weight: 400;
+}
