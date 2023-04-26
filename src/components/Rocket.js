@@ -16,20 +16,20 @@ const Rocket = ({ rocket }) => (
           <span className={rocket.reserved === true ? 'show' : 'hidden'}>Reserved</span>
           {rocket.description}
         </p>
-        {rocket.reserved && (
-        <button
-          type="button"
-          className="cancel-btn"
-        >
-          Cancel Reservation
-        </button>
-        )}
         {!rocket.reserved && (
         <button
           type="button"
           className="reserve-btn"
         >
           Reserve Rocket
+        </button>
+        )}
+        {rocket.reserved && (
+        <button
+          type="button"
+          className="cancel-btn"
+        >
+          Cancel Reservation
         </button>
         )}
       </div>
