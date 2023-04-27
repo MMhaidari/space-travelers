@@ -1,3 +1,8 @@
+.mission-name,
+.mission-description {
+  font-size: 1.6rem;
+}
+
 .leave-mission__button,
 .join-mission__button {
   border-radius: 3px;
