@@ -51,7 +51,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Navigation bar**
-- **Mission page **
+- **Mission page**
 - **Rockets page**
 - **ability to reserve rockects**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
