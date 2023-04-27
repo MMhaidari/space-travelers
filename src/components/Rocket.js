@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Rocket.css';
 
-const Rocket = ({ rocket }) => (
+const Rocket = ({ rocket, handleReserveClick, onCancelClick }) => (
   <section>
     <div className="rocket">
       <div>
@@ -20,6 +20,7 @@ const Rocket = ({ rocket }) => (
         <button
           type="button"
           className="cancel-btn"
+          onClick={() => onCancelClick(rocket.id)}
         >
           Cancel Reservation
         </button>
@@ -28,6 +29,7 @@ const Rocket = ({ rocket }) => (
         <button
           type="button"
           className="reserve-btn"
+          onClick={() => handleReserveClick(rocket.id)}
         >
           Reserve Rocket
         </button>
@@ -39,6 +41,8 @@ const Rocket = ({ rocket }) => (
 
 Rocket.propTypes = {
   rocket: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  handleReserveClick: PropTypes.func.isRequired,
+  onCancelClick: PropTypes.func.isRequired,
 };
 
 export default Rocket;
