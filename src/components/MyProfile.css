@@ -1,0 +1,15 @@
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  margin: 1rem;
+}
+
+.profile-section__header {
+  font-size: 2rem;
+}
+
+.profile-table {
+  width: 100%;
+  margin: 2rem 0;
+}

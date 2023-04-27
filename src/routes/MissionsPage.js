@@ -5,11 +5,11 @@ import { getMissions } from '../redux/missions/missionsSlice';
 import Mission from '../components/Mission';
 
 const MissionsPage = () => {
+  const { missions, status } = useSelector((store) => store.missions);
   const dispatch = useDispatch();
-  const { missions } = useSelector((store) => store.missions);
   useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
+    if (status === 'idle') dispatch(getMissions());
+  }, [dispatch, status]);
   return (
     <table className="missions-table">
       <thead>
@@ -19,7 +19,7 @@ const MissionsPage = () => {
           <th>Status</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="missions-container">
         {missions.map((mission) => (
           <Mission key={mission.missionId} mission={mission} />
         ))}

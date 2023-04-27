@@ -8,15 +8,18 @@ const initialState = {
   erorrr: null,
 };
 
-export const fetchRockets = createAsyncThunk('rocket/fectchRockectsData', async () => {
-  try {
-    const request = await fetch(apiUrl);
-    const data = await request.json();
-    return data;
-  } catch (error) {
-    return error;
-  }
-});
+export const fetchRockets = createAsyncThunk(
+  'rocket/fectchRockectsData',
+  async () => {
+    try {
+      const request = await fetch(apiUrl);
+      const data = await request.json();
+      return data;
+    } catch (error) {
+      return error;
+    }
+  },
+);
 
 const rocketSlice = createSlice({
   name: 'rocket',

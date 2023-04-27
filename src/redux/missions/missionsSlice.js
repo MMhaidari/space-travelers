@@ -7,6 +7,7 @@ const initialState = {
   missions: [],
   isLoading: false,
   error: false,
+  status: 'idle',
 };
 
 export const getMissions = createAsyncThunk(
@@ -51,19 +52,26 @@ const missionsSlice = createSlice({
         missionId: mission.mission_id,
         missionName: mission.mission_name,
         description: mission.description,
+        reserved: false,
       }));
       return {
         ...state,
         missions,
         isLoading: false,
         error: false,
+        status: 'fullfiled',
       };
     },
-    [getMissions.pending]: (state) => ({ ...state, isLoading: true }),
+    [getMissions.pending]: (state) => ({
+      ...state,
+      isLoading: true,
+      status: 'pending',
+    }),
     [getMissions.rejected]: (state) => ({
       ...state,
       isLoading: false,
       error: true,
+      status: 'rejected',
     }),
   },
 });
