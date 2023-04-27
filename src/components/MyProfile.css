@@ -2,14 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3rem;
-  margin: 1rem;
+  padding: 2rem;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 .profile-section__header {
-  font-size: 2rem;
+  font-size: 3.1rem;
 }
 
 .profile-table {
   width: 100%;
   margin: 2rem 0;
+}
+
+.name {
+  font-size: 2.8rem;
 }

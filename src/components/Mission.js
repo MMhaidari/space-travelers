@@ -1,7 +1,7 @@
-import './Mission.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
+import './Mission.css';
 
 const Mission = ({ mission }) => {
   const dispatch = useDispatch();
@@ -13,9 +13,9 @@ const Mission = ({ mission }) => {
   };
 
   return (
-    <tr>
-      <th>{mission.missionName}</th>
-      <th>{mission.description}</th>
+    <tr className="mission-container">
+      <th className="mission-name">{mission.missionName}</th>
+      <th className="mission-description">{mission.description}</th>
       {mission.reserved && (
         <>
           <th>
