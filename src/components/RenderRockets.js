@@ -30,7 +30,6 @@ const RenderRockets = () => {
   }
   return (
     <div>
-      <hr className="row" />
       {rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
