@@ -16,26 +16,38 @@ const Mission = ({ mission }) => {
     <tr>
       <th>{mission.missionName}</th>
       <th>{mission.description}</th>
-      <th>
-        {mission.reserved && (
-          <button
-            className="leave-mission__button"
-            type="button"
-            onClick={handleLeavingMission}
-          >
-            Leave Mission
-          </button>
-        )}
-        {!mission.reserved && (
-          <button
-            type="button"
-            onClick={handleJoiningMission}
-            className="join-mission__button"
-          >
-            Join Mission
-          </button>
-        )}
-      </th>
+      {mission.reserved && (
+        <>
+          <th>
+            <p className="active-member">Active member</p>
+          </th>
+          <th>
+            <button
+              className="leave-mission__button"
+              type="button"
+              onClick={handleLeavingMission}
+            >
+              Leave Mission
+            </button>
+          </th>
+        </>
+      )}
+      {!mission.reserved && (
+        <>
+          <th>
+            <p className="not-a__member">NOT A MEMBER</p>
+          </th>
+          <th>
+            <button
+              type="button"
+              onClick={handleJoiningMission}
+              className="join-mission__button"
+            >
+              Join Mission
+            </button>
+          </th>
+        </>
+      )}
     </tr>
   );
 };

@@ -16,3 +16,19 @@
   border-color: red;
   color: red;
 }
+
+th p {
+  display: inline-block;
+  border-radius: 2px;
+  width: max-content;
+  padding: 1px 3px;
+  color: white;
+}
+
+.not-a__member {
+  background-color: rgba(157, 152, 146, 0.7);
+}
+
+.active-member {
+  background-color: rgba(84, 84, 255, 0.7);
+}
