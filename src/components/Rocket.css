@@ -41,10 +41,9 @@ img {
 .cancel-btn {
   background-color: transparent;
   color: #5c5c5c;
-  border: none;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
-  border: .1rem solid #555;
+  border: 0.1rem solid #555;
   font-size: 1.6rem;
   cursor: pointer;
 }
@@ -64,5 +63,5 @@ img {
   color: #fff;
   border-radius: 0.4rem;
   margin-right: 0.8rem;
-  padding: 0.4rem .6rem;
+  padding: 0.4rem 0.6rem;
 }
