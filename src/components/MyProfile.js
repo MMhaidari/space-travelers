@@ -5,24 +5,30 @@ const MyProfile = () => {
   const rockets = useSelector((store) => store.rockets.rockets);
   const { missions } = useSelector((store) => store.missions);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
+  const reservedMissions = missions.filter((mission) => mission.reserved);
   return (
     <div className="profile-container">
       <section className="profile-section">
         <h3 className="profile-section__header name">My Missions</h3>
         <table className="profile-table">
+          <thead>
+            <tr>
+              {reservedMissions.length === 0 && (
+                <td className="name">No Missions Reserved</td>
+              )}
+            </tr>
+          </thead>
           <tbody>
-            {missions.map(
-              (mission) => mission.reserved && (
+            {reservedMissions.map((mission) => (
               <tr key={mission.missionId}>
                 <th className="name">{mission.missionName}</th>
               </tr>
-              ),
-            )}
+            ))}
           </tbody>
         </table>
       </section>
       <section className="profile-section">
-        <h3 className="profile-section__header">My Rockets</h3>
+        <h3 className="profile-section__header name">My Rockets</h3>
         <table className="profile-table">
           <thead>
             <tr>
@@ -34,7 +40,7 @@ const MyProfile = () => {
           <tbody>
             {reservedRockets.map((rockets) => (
               <tr key={rockets.id}>
-                <td className="name">{rockets.name}</td>
+                <th className="name">{rockets.name}</th>
               </tr>
             ))}
           </tbody>
