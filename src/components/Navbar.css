@@ -27,10 +27,6 @@
   padding: 0 1.5rem;
 }
 
-.nav-li:last-child {
-  border-left: solid 2px black;
-}
-
 .nav-link {
   text-decoration: none;
   color: blue;
