@@ -31,9 +31,9 @@ th p {
 }
 
 .not-a__member {
-  background-color: rgba(157, 152, 146, 0.7);
+  background-color: rgba(131, 126, 121, 0.7);
 }
 
 .active-member {
-  background-color: rgba(84, 84, 255, 0.7);
+  background-color: #2596be;
 }
