@@ -36,3 +36,10 @@
 .logo {
   width: 4rem;
 }
+
+.line {
+  height: 1.3rem;
+  width: 0.2rem;
+  align-self: center;
+  background-color: #555;
+}
