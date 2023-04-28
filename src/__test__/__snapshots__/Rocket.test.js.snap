@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rocket component renders correctly when rocket is not reserved 1`] = `
+<section>
+  <div
+    className="rocket"
+  >
+    <div>
+      <img
+        alt="Rocket Falcon 1"
+        src="https://www.example.com/falcon1.jpg"
+      />
+    </div>
+    <div>
+      <h2
+        className="rocket-head"
+      >
+        Falcon 1
+      </h2>
+      <p
+        className="rocket-text"
+      >
+        <span
+          className="hidden"
+        >
+          Reserved
+        </span>
+        Small launch vehicle
+      </p>
+      <button
+        className="reserve-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Reserve Rocket
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Rocket component renders correctly when rocket is reserved 1`] = `
+<section>
+  <div
+    className="rocket"
+  >
+    <div>
+      <img
+        alt="Rocket Falcon 1"
+        src="https://www.example.com/falcon1.jpg"
+      />
+    </div>
+    <div>
+      <h2
+        className="rocket-head"
+      >
+        Falcon 1
+      </h2>
+      <p
+        className="rocket-text"
+      >
+        <span
+          className="show"
+        >
+          Reserved
+        </span>
+        Small launch vehicle
+      </p>
+      <button
+        className="cancel-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel Reservation
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Rocket component renders when rocket is reserved 1`] = `
+<section>
+  <div
+    className="rocket"
+  >
+    <div>
+      <img
+        alt="Rocket Falcon 1"
+        src="https://www.example.com/falcon1.jpg"
+      />
+    </div>
+    <div>
+      <h2
+        className="rocket-head"
+      >
+        Falcon 1
+      </h2>
+      <p
+        className="rocket-text"
+      >
+        <span
+          className="show"
+        >
+          Reserved
+        </span>
+        Small launch vehicle
+      </p>
+      <button
+        className="cancel-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel Reservation
+      </button>
+    </div>
+  </div>
+</section>
+`;
