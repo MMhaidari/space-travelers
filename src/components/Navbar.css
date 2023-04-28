@@ -25,12 +25,12 @@
 
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: #0069d9;
 }
 
 .nav-link.active {
   text-decoration: underline;
-  color: blue;
+  color: #0069d9;
 }
 
 .logo {
