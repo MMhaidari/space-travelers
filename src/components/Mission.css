@@ -1,0 +1,39 @@
+.mission-name,
+.mission-description {
+  font-size: 1.6rem;
+}
+
+.leave-mission__button,
+.join-mission__button {
+  border-radius: 3px;
+  width: 8rem;
+  height: 2.2rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: solid 1px;
+}
+
+.join-mission__button {
+  border-color: black;
+}
+
+.leave-mission__button {
+  border-color: red;
+  color: red;
+}
+
+th p {
+  display: inline-block;
+  border-radius: 2px;
+  width: max-content;
+  padding: 1px 3px;
+  color: white;
+}
+
+.not-a__member {
+  background-color: rgba(131, 126, 121, 0.7);
+}
+
+.active-member {
+  background-color: #2596be;
+}

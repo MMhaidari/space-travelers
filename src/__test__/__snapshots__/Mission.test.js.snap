@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission component renders correctly when mission is not reserved 1`] = `
+<tr
+  className="mission-container"
+>
+  <th
+    className="mission-name"
+  >
+    Thaicom
+  </th>
+  <th
+    className="mission-description"
+  >
+    mission description
+  </th>
+  <th>
+    <p
+      className="not-a__member"
+    >
+      NOT A MEMBER
+    </p>
+  </th>
+  <th>
+    <button
+      className="join-mission__button"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </th>
+</tr>
+`;
+
+exports[`Mission component renders when mission is reserved 1`] = `
+<tr
+  className="mission-container"
+>
+  <th
+    className="mission-name"
+  >
+    Thaicom
+  </th>
+  <th
+    className="mission-description"
+  >
+    mission description
+  </th>
+  <th>
+    <p
+      className="active-member"
+    >
+      Active member
+    </p>
+  </th>
+  <th>
+    <button
+      className="leave-mission__button"
+      onClick={[Function]}
+      type="button"
+    >
+      Leave Mission
+    </button>
+  </th>
+</tr>
+`;

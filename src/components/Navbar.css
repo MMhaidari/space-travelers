@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid #333;
+  padding: 1rem 2.8rem;
+  font-size: 1.8rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  text-transform: capitalize;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 2rem;
+  padding: 0 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.line {
+  height: 1.3rem;
+  width: 0.2rem;
+  align-self: center;
+  background-color: #555;
+}

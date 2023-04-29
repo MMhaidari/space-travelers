@@ -1,0 +1,16 @@
+.missions-table {
+  margin: 1rem;
+}
+
+th {
+  padding: 1rem;
+  text-align: start;
+}
+
+.missions-container tr:nth-child(even) {
+  background-color: #ebebeb;
+}
+
+.missions-container th:nth-child(2) {
+  font-weight: 400;
+}
