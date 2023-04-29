@@ -1,4 +1,3 @@
-/* eslint-disable react/self-closing-comp */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
@@ -21,7 +20,7 @@ const Navbar = () => (
           Mission
         </NavLink>
       </li>
-      <div className="line"></div>
+      <div className="line" />
       <li className="nav-li">
         <NavLink className="nav-link" to="/profilepage">
           MyProfile
