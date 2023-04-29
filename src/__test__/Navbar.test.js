@@ -39,11 +39,13 @@ describe('NavBar', () => {
     expect(profileLink).toHaveAttribute('href', '/profilepage');
   });
   it('Navbar snapshots match', () => {
-    const tree = renderer.create(
-      <BrowserRouter>
-        <NavBar />
-      </BrowserRouter>,
-    ).toJSON();
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <NavBar />
+        </BrowserRouter>,
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
